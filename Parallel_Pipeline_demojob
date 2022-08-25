@@ -1,0 +1,38 @@
+pipeline
+{
+    agent 
+    {
+        label 'built-in'
+    }
+    options { timestamps () }
+    stages
+    {
+        stage ('parallel stages')
+        {
+            parallel
+            {
+                stage ('print 1')
+                {
+                    steps
+                    {
+                        echo "Hello"
+                        echo "123"
+                    }
+                    
+                
+                }
+                stage('print2')
+                {
+                    steps
+                    {
+                        echo "How are you?"
+                        echo "345"
+                    }
+                
+                }
+            }
+            
+        }
+    }
+         
+}
