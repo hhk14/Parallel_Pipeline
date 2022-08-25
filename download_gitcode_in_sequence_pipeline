@@ -1,0 +1,37 @@
+pipeline
+{
+    agent 
+    {
+        label 'built-in'
+    }
+    options { timestamps () }
+    stages
+    {
+        
+        
+            
+           
+                stage ('download1')
+                {
+                    steps
+                    {
+                        git 'https://github.com/keshavr21/maven_test.git'
+                    }
+                    
+                
+                }
+                stage('Download2')
+                {
+                    steps
+                    {
+                        git 'https://github.com/keshavr21/test_cases.git'
+                    }
+                
+                }
+            
+            
+        
+    }
+    
+    
+}
