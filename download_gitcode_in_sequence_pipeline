@@ -7,10 +7,7 @@ pipeline
     options { timestamps () }
     stages
     {
-        
-        
             
-           
                 stage ('download1')
                 {
                     steps
@@ -27,9 +24,7 @@ pipeline
                         git 'https://github.com/keshavr21/test_cases.git'
                     }
                 
-                }
-            
-            
+                }           
         
     }
     
