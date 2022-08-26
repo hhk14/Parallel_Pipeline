@@ -17,6 +17,7 @@ pipeline
                     {
                         echo "Hello"
                         echo "123"
+                        echo "${env.BRANCH_NAME}"
                     }
                     
                 
